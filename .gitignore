@@ -7,3 +7,6 @@ package.json
 *.cfg
 
 daily_form.psd
+payment-form.psd
+newsletter_form.psd
+sign-in-form.psd

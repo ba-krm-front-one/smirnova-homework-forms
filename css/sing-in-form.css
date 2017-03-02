@@ -1,0 +1,151 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fbf6e4;
+}
+
+body{
+    background: #e5eeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #fbf6e4;
+    position: relative;
+
+}
+
+.ba-box{
+    background: url(../sign-in-form-assets/bg.jpg) no-repeat;
+    background-size: cover;
+    max-width: 400px;
+    max-height: 496px;
+    flex-grow: 1;
+    box-shadow: 0 0 20px rgba(2,41,120,0.3);
+    z-index: 2;
+    padding: 50px 70px;
+}
+
+
+.ba-header__link{
+    font-size: 18px;
+    opacity: 0.8;
+    margin-right: 22px;
+}
+
+.ba-header__link--active{
+    border-bottom: 2px solid #e66a64;
+    opacity: 1;
+}
+
+.ba-header__link:hover{
+    opacity: 1;
+    text-shadow: 0 0 3px rgba(0,0,0,0.7);
+    border: none;
+}
+
+.ba-form{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ba-form__name{
+    display: block;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.ba-form__vvod{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #bfb9cc;
+    outline: none;
+    color: #353a45;
+    margin-bottom: 18px;
+}
+
+
+.ba-form__submit{
+    border: none;
+    background: #23ae92;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 42px;
+    margin-top: 40px;
+}
+
+.ba-form__submit:hover{
+    background: #fbf6e4;
+    color: #23ae92;
+    border: 1px solid #23ae92;
+}
+.ba-checkbox {
+    display: none;
+}
+
+.ba-checkbox__custom {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: #23ae92;
+}
+
+
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.ba-checkbox__custom,
+.ba-checkbox__label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.ba-checkbox:checked + .ba-checkbox__custom:before {
+    content: url("../sign-in-form-assets/check.png");             /* Добавляем наш псевдоэлемент */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 10px;
+    height: 16px;
+}
+
+.ba-footer__actions{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ba-footer__link{
+    border-bottom: 1px solid;
+    padding-bottom: 4px;
+    opacity: 0.6;
+    font-weight: 400;
+
+}
+
+.ba-footer__link:hover{
+    opacity: 1;
+}
+
+
+.ba-shaddow{
+    position: absolute;
+    z-index: 1;
+    transform: translateY(115%);
+    background: url("../sign-in-form-assets/shadow.png") no-repeat;
+    width: 466px;
+    height: 183px;
+    background-size: contain;
+    margin: auto;
+}

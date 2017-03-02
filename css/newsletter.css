@@ -1,0 +1,131 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(59deg, #bac5db 0%, #bac5db 100%) #bac5db;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ba-container{
+    max-width: 666px;
+    min-width: 300px;
+    box-shadow: 0 26px 49px rgba(35, 70, 133, 0.28);
+    border-radius: 24px;
+    background-color: #353a45;
+    display: flex;
+    flex-flow: column;
+    padding: 0 40px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.ba-header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+
+}
+.ba-header__logo{
+    width: 92px;
+    height: 92px;
+    box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.13);
+    border-radius: 50%;
+    background: url("../newsletter_form-assets/letter.png") 50% 50% no-repeat, linear-gradient(59deg, #47aae6 0%, #9372bf 100%);;
+    position: relative;
+    transform: translateY(-50%);
+
+}
+
+.ba-header h1{
+    position: relative;
+    top: -10px;
+    margin: 0;
+    padding: 0;
+    color: #538fff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.ba-header p{
+    margin: 0 0 40px;
+    padding: 0;
+    font-size: 22px;
+}
+
+.ba-header__close a{
+    background: url("../newsletter_form-assets/close.png") no-repeat;
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.ba-header__close a:hover{
+    box-shadow: 0 0 0 1px rgba(255,255,255, 0.1);
+}
+
+.ba-form {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.ba-form__vvod{
+    margin: 0 7px 10px;
+    padding-left: 18px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    height: 52px;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    background-color: #ffffff;
+    font-size: 20px;
+    outline: none;
+    color: #1b1c1d;
+}
+
+.ba-form__submit{
+    margin: 0 7px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: #538fff;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 161px;
+    min-width: 240px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    outline: none;
+}
+
+.ba-form__submit:hover{
+    background: #881c82;
+}
+
+.ba-footer p{
+    text-align: center;
+    color: #787d87;
+    font-style: italic;
+    padding: 0;
+    margin: 37px 0 60px;
+}
+
+
